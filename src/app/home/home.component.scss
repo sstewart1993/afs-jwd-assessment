@@ -1,36 +1,62 @@
-
 a:visited {
-  background-color: orange;
-
+  background-color: goldenrod;
 }
-a:hover, a:active, a:focus {
-  color:#c33;
-}
-
-
 
 .logo {
-  width: 120px;
+  width: 130px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255);
   margin: 16px 30px 16px 0;
   float: left;
 }
 
+.header_list{
+  list-style-type: none;
+}
+
+.button{
+  background-color: black;
+  border: none;
+}
+
+.button:hover{
+  background-color: #F5a624
+}
+
+.link{
+  color: white;
+}
+
 .header-menu {
-  line-height: 64px;
+  line-height: auto;
   display: flex;
-  padding-left: 10px;;
+
 }
 
-
-.sider-menu {
+.side-menu {
   height: 100%;
-  border-right: 0;
 }
 
-.inner-layout {
-  padding: 0 24px 24px;
+.side_button{
+  height: 30px;
+  width: auto;
+  background-color: white;
+  border: none;
+}
+.side_button_a{
+  color: black;
+  font-size: medium;
+  width: auto;
+}
+.side_button_a:hover{
+  color: #f5a624;
+  background-color: rgba(255, 165, 0, 0.1)
+}
+.side_bullet{
+  list-style-type: none;
+}
+#side_list{
+  list-style-type:none;
 }
 
 nz-breadcrumb {
@@ -38,7 +64,7 @@ nz-breadcrumb {
 }
 
 nz-content {
-  background: #fff;
+  background-color: white;
   padding: 24px;
   min-height: 280px;
 }

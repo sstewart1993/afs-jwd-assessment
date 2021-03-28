@@ -1,1 +1,28 @@
-<p>employees works!</p>
+<nz-table #basicTable [nzData]="listData">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Employeed</th>
+      <th>Gender</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{listData.first_name}}</td>
+      <td>{{listData.last_name}}</td>
+      <td>{{listData.email}}</td>
+      <td>{{listData.employeed}}</td>
+      <td>{{listData.gender}}</td>
+      <td>
+        <a>Action 一 {{listData.name}}</a>
+        <nz-divider nzType="vertical"></nz-divider>
+        <a>Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>
+
+

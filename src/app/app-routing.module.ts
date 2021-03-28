@@ -10,7 +10,7 @@ const routes: Routes = [
     path: 'home', component: HomeComponent,
     children: [
       {
-        path: 'customers', 
+        path: 'customers',
         component: CustomersComponent,
         canActivate: [AuthGuard],
       },
@@ -22,7 +22,7 @@ const routes: Routes = [
     ],
   },
      {
-    path: '', redirectTo: '/home', pathMatch: 'full'
+    path: 'home', redirectTo: '/home', pathMatch: 'full'
   }
 
 ];

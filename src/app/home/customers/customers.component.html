@@ -1,2 +1,21 @@
-<p>customers works!</p>
+<nz-table #basicTable [nzData]="listData">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Employed</th>
+      <th>Gender</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of basicTable.data">
+      <td>{{listData.first_name}}</td>
+      <td>{{listData.last_name}}</td>
+      <td>{{listData.email}}</td>
+      <td>{{listData.employed}}</td>
+      <td>{{listData.gender}}</td>
+    </tr>
+  </tbody>
+</nz-table>
 
