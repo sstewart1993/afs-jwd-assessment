@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as data from "../../../assets/mockData.js"
+import * as data from "../../../assets/mockData.json"
 
 
 @Component({
@@ -12,8 +12,7 @@ export class CustomersComponent implements OnInit {
   constructor() { }
     listData = data;
   ngOnInit(): void {
-    console.log(this.listData);
-
+    // console.log(this.listData);
   }
 
 }
