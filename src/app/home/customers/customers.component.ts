@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as data from "../../../assets/mockData.json"
+import * as data from "../../../assets/mockData.js"
 
 
 @Component({
